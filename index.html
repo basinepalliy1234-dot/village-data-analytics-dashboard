@@ -4,13 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Village Data Analytics Dashboard</title>
-
     <link rel="stylesheet" href="style.css">
-
-    <!-- Chart.js Library -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-
 <body>
 
 <header>
@@ -28,27 +23,6 @@
 </nav>
 
 <div class="container">
-
-    <section class="section-box">
-        <h2>Village Overview</h2>
-        <img src="https://via.placeholder.com/1000x300"
-        alt="Village Image"
-        style="width:100%; border-radius:10px;">
-    </section>
-
-    <section class="section-box">
-        <h2>Search Records</h2>
-        <input type="text" placeholder="Search Village Data" style="width:100%; padding:10px;">
-    </section>
-
-    <section class="section-box">
-        <h2>Project Details</h2>
-        <p><b>Student Name:</b> Basinepalli Yamini</p>
-        <p><b>Roll Number:</b> 24F21A31J5</p>
-        <p><b>Department:</b> CSE-AI</p>
-        <p><b>College:</b> Gates Institute of Technology</p>
-        <p><b>Village:</b> Thogarakunta</p>
-    </section>
 
     <section class="form-section">
         <h2>Village Information Form</h2>
@@ -81,6 +55,7 @@
         <h2>Dashboard Overview</h2>
 
         <div class="cards">
+
             <div class="card">
                 <h3>Total Population</h3>
                 <p>5000</p>
@@ -100,6 +75,7 @@
                 <h3>Farmers</h3>
                 <p>900</p>
             </div>
+
         </div>
     </section>
 
@@ -111,8 +87,6 @@
             <li>Female Population: 2400</li>
             <li>Total Households: 1200</li>
         </ul>
-
-        <canvas id="populationChart"></canvas>
     </section>
 
     <section id="education" class="section-box">
@@ -122,8 +96,6 @@
             <li>Schools Available: 3</li>
             <li>Literacy Rate: 75%</li>
         </ul>
-
-        <canvas id="educationChart"></canvas>
     </section>
 
     <section id="healthcare" class="section-box">
@@ -142,8 +114,6 @@
             <li>Main Crops: Groundnut, Cotton, Maize</li>
             <li>Irrigated Land: 650 Acres</li>
         </ul>
-
-        <canvas id="agriChart"></canvas>
     </section>
 
     <section id="schemes" class="section-box">
@@ -182,45 +152,6 @@
     <p>B.Tech CSE-AI | Gates Institute of Technology</p>
     <p>Community Service Project - Village Data Analytics Dashboard</p>
 </footer>
-
-<script>
-// Population Chart
-new Chart(document.getElementById('populationChart'), {
-    type: 'pie',
-    data: {
-        labels: ['Children', 'Youth', 'Adults', 'Elderly'],
-        datasets: [{
-            data: [25, 40, 30, 15],
-            backgroundColor: ['red', 'blue', 'green', 'orange']
-        }]
-    }
-});
-
-// Education Chart
-new Chart(document.getElementById('educationChart'), {
-    type: 'bar',
-    data: {
-        labels: ['Primary', 'High School', 'Intermediate', 'Degree'],
-        datasets: [{
-            label: 'Students',
-            data: [120, 90, 60, 40],
-            backgroundColor: 'skyblue'
-        }]
-    }
-});
-
-// Agriculture Chart
-new Chart(document.getElementById('agriChart'), {
-    type: 'doughnut',
-    data: {
-        labels: ['Paddy', 'Groundnut', 'Maize', 'Vegetables'],
-        datasets: [{
-            data: [40, 25, 20, 15],
-            backgroundColor: ['gold', 'brown', 'yellowgreen', 'green']
-        }]
-    }
-});
-</script>
 
 </body>
 </html>
