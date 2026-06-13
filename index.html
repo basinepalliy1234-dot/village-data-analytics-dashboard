@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Village Data Analytics Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -8,96 +10,147 @@
 
 <header>
     <h1>Village Data Analytics Dashboard</h1>
-    <h3>Thogarakunta Village - Smart Village Initiative</h3>
+    <p>Thogarakunta Village - Smart Village Initiative</p>
 </header>
+
+<nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#population">Population</a>
+    <a href="#education">Education</a>
+    <a href="#healthcare">Healthcare</a>
+    <a href="#agriculture">Agriculture</a>
+    <a href="#schemes">Schemes</a>
+</nav>
 
 <div class="container">
 
-    <form>
+    <section class="form-section">
         <h2>Village Information Form</h2>
 
-        <label>Name</label>
-        <input type="text" placeholder="Enter Name">
+        <form>
+            <label>Name</label>
+            <input type="text" placeholder="Enter Name">
 
-        <label>Mobile Number</label>
-        <input type="text" placeholder="Enter Mobile Number">
+            <label>Mobile Number</label>
+            <input type="text" placeholder="Enter Mobile Number">
 
-        <label>Village</label>
-        <input type="text" placeholder="Enter Village Name">
+            <label>Village</label>
+            <input type="text" placeholder="Enter Village Name">
 
-        <label>Issue / Need</label>
-        <input type="text" placeholder="Enter Issue">
+            <label>Issue / Need</label>
+            <input type="text" placeholder="Enter Issue">
 
-        <label>Priority</label>
-        <select>
-            <option>High</option>
-            <option>Medium</option>
-            <option>Low</option>
-        </select>
+            <label>Priority</label>
+            <select>
+                <option>High</option>
+                <option>Medium</option>
+                <option>Low</option>
+            </select>
 
-        <button type="submit">Submit</button>
-    </form>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 
-    <h2>Dashboard Overview</h2>
+    <section id="dashboard">
+        <h2>Dashboard Overview</h2>
 
-    <div class="card-container">
+        <div class="cards">
 
-        <div class="card">
-            <h2>Population</h2>
-            <p>5000</p>
+            <div class="card">
+                <h3>Total Population</h3>
+                <p>5000</p>
+            </div>
+
+            <div class="card">
+                <h3>Households</h3>
+                <p>1200</p>
+            </div>
+
+            <div class="card">
+                <h3>Literacy Rate</h3>
+                <p>75%</p>
+            </div>
+
+            <div class="card">
+                <h3>Farmers</h3>
+                <p>900</p>
+            </div>
+
         </div>
+    </section>
 
-        <div class="card">
-            <h2>Households</h2>
-            <p>1200</p>
-        </div>
+    <section id="population" class="section-box">
+        <h2>Population Details</h2>
+        <ul>
+            <li>Total Population: 5000</li>
+            <li>Male Population: 2600</li>
+            <li>Female Population: 2400</li>
+            <li>Total Households: 1200</li>
+        </ul>
+    </section>
 
-        <div class="card">
-            <h2>Literacy Rate</h2>
-            <p>75%</p>
-        </div>
-
-        <div class="card">
-            <h2>Farmers</h2>
-            <p>900</p>
-        </div>
-
-    </div>
-
-    <div class="section">
+    <section id="education" class="section-box">
         <h2>Education Details</h2>
-        <p>Total Students: 1800</p>
-        <p>Schools Available: 3</p>
-        <p>Literacy Rate: 75%</p>
-    </div>
+        <ul>
+            <li>Total Students: 1800</li>
+            <li>Schools Available: 3</li>
+            <li>Literacy Rate: 75%</li>
+        </ul>
+    </section>
 
-    <div class="section">
+    <section id="healthcare" class="section-box">
         <h2>Healthcare Details</h2>
-        <p>Primary Health Center Available</p>
-        <p>Health Workers: 10</p>
-        <p>Vaccination Coverage: 90%</p>
-    </div>
+        <ul>
+            <li>Primary Health Center Available</li>
+            <li>Health Workers: 10</li>
+            <li>Vaccination Coverage: 90%</li>
+        </ul>
+    </section>
 
-    <div class="section">
+    <section id="agriculture" class="section-box">
         <h2>Agriculture Details</h2>
-        <p>Total Farmers: 900</p>
-        <p>Main Crops: Groundnut, Cotton, Maize</p>
-        <p>Irrigated Land: 650 Acres</p>
-    </div>
+        <ul>
+            <li>Total Farmers: 900</li>
+            <li>Main Crops: Groundnut, Cotton, Maize</li>
+            <li>Irrigated Land: 650 Acres</li>
+        </ul>
+    </section>
 
-    <div class="section">
+    <section id="schemes" class="section-box">
         <h2>Government Welfare Schemes</h2>
-        <p>Total Beneficiaries: 1500</p>
-        <p>Housing Scheme Beneficiaries: 350</p>
-        <p>Pension Scheme Beneficiaries: 500</p>
-    </div>
+        <ul>
+            <li>Total Beneficiaries: 1500</li>
+            <li>Housing Scheme Beneficiaries: 350</li>
+            <li>Pension Scheme Beneficiaries: 500</li>
+        </ul>
+    </section>
+
+    <section class="section-box">
+        <h2>Project Objectives</h2>
+        <ul>
+            <li>Collect and manage village data digitally.</li>
+            <li>Improve access to village information.</li>
+            <li>Support decision-making through analytics.</li>
+            <li>Promote Smart Village development.</li>
+        </ul>
+    </section>
+
+    <section class="section-box">
+        <h2>Project Outcomes</h2>
+        <ul>
+            <li>Organized village information effectively.</li>
+            <li>Reduced manual record maintenance.</li>
+            <li>Improved reporting and analysis.</li>
+            <li>Supported digital governance.</li>
+        </ul>
+    </section>
 
 </div>
 
 <footer>
     <h3>Developed By: Basinepalli Yamini</h3>
-    <p>Department of CSE-AI | Gates Institute of Technology</p>
-    <p>Community Service Project 2026</p>
+    <p>B.Tech CSE-AI | Gates Institute of Technology</p>
+    <p>Community Service Project - Village Data Analytics Dashboard</p>
 </footer>
 
 </body>
